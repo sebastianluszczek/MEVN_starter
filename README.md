@@ -1,5 +1,9 @@
 # MEVN_starter
 > Simple MENV stack boilerplate for future usage. 
+> Server build on Node.js and Express. 
+> MongoDB and Mongoose.js for database purpose.
+> Front-end build in Vue.js.
+> For async connections front-end <--> back-end I used axios.
 
 ---
 
