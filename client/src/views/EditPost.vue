@@ -26,6 +26,14 @@ export default {
     };
   },
   props: ["posts"],
+  async created() {
+    const response = await axios.get(
+      `http://localhost:8080/api/posts/${this.$route.params.id}`
+    );
+    this.title = response.data.title;
+    this.body = response.data.body;
+    this.author = response.data.author;
+  },
   methods: {
     async editPost() {
       const newPost = {
