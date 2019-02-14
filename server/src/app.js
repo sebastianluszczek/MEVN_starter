@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 // mongoDB connection
-mongoose.connect('mongodb+srv://utkow1991:utkow_1991@cluster0-ympqd.mongodb.net/mevn_starter?retryWrites=true', {
+mongoose.connect('mongoDB_connection_string', {
     useNewUrlParser: true
 });
 
